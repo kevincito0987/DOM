@@ -16,8 +16,11 @@ To add nodes we can do so:
    To do a appendChild i gonna to need:
    a.A reference node.
    b.A node that i'll add.
+  That's is good to add it in the code to work in diferents navigators.
  2.Element.append.
+   That's is good to add it in the code to work in diferents navigators with the exception of internet explorer.
  3.Element.insertBefore.
+   This node make elements before of reference node.
  4.Element.insertAdjacentElement.
 
    
