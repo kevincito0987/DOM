@@ -22,5 +22,89 @@ To add nodes we can do so:
  3.Element.insertBefore.
    This node make elements before of reference node.
  4.Element.insertAdjacentElement.
+And to add comments in JavaScript we use: //
+To show various things in the browser we use:
+  /*Escape sequences:
+    Code    /  Result
+    \'          Single quotation mark<comilla>
+    \"          Double quotation mark
+    \\          Backslash <barra invertida>
+    \n          New line
+    \r          Carriage return <retorno de carro>
+    \t          Tabulation
+    \b          Recoil <retroceso>
+    \f          Page break <salto de pagina>
+To refer to a internal element of an Array we use: x([Element][Internal element]);
+To add new dates to our Array we use: 
+  var x = [];
+  x.push("Hi);
+To delete the ultimate element of a Array we use:
+  var y =["a", "b"];
+  y.pop();
+  And this method is be able to delete the ultimate element of the Array, And to show that element individually simply y save that so:
+     var y =["a", "b"];
+     var x;
+     x = y.pop();
+To delete the first element of a Array we use:
+  var y =["a", "b"];
+  y.shift();
+  To add the a new element initially of a Array we use:
+  var y =["a", "b"];
+  y.unshift("A");
+To give back some values in a function we use:
+  function xd (){
+     return x + y;
+  }
+ And to save that we use:
+   function xd (){
+     return x + y;
+    }
+    var resultado = xd();
+To show my Array in console there is a special function in JavaScript that shows my Array:
+  console.log(JSON.stringify(myArray));
+To show that something is different that another thing we use the operator:
+ !=
+Truth tables
+      &&
+  x  y  x && y
+  t  t    t
+  t  f    f 
+  f  t    f
+  f  f    f 
 
-   
+      or
+   x  y  x || y 
+   t  t    t 
+   t  f    t 
+   f  t    t 
+   f  f    f 
+
+      NOT 
+   x  y  !x !y 
+   t  t  f  f 
+   t  f  f  t 
+   f  t  t  f 
+   f  f  t  t 
+To create elements in JavaScript we use:
+  var x = {
+    y = a;
+    i = s; 
+    o = d; 
+    j = f;
+  }
+  Or we create a Array.
+To update a variable of a Array or a object we use:
+  var x = {      var x = [
+     y = a;           y = a;
+    i = s;            i = s; 
+    o = d;            o = d; 
+    j = f;            j = f;
+  }                   ]    
+  x.y = b             x[y] = b
+  To add news properties to a object we use:
+    x.c<new property> = r   x[c] = r;
+  To delete a property of a object we use:
+    delete x.i;  delete x[i];
+  To verify if a object has a property we use:
+    x.hasOwnProperty(y);
+    
