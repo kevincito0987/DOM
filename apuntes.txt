@@ -107,4 +107,9 @@ To update a variable of a Array or a object we use:
     delete x.i;  delete x[i];
   To verify if a object has a property we use:
     x.hasOwnProperty(y);
-    
+To show something in mayus we use the function: 
+  x.toUperCase(y);
+The cicles do while are used to ask for users datas and then verify its.
+When i want to do news functions but if the data what the client is looking for but that isn't found we can use:
+  return xy || z<Messege that i show to the usuary what who says that what he is looking for is not there>;
+
