@@ -108,8 +108,105 @@ To update a variable of a Array or a object we use:
   To verify if a object has a property we use:
     x.hasOwnProperty(y);
 To show something in mayus we use the function: 
-  x.toUperCase(y);
-The cicles do while are used to ask for users datas and then verify its.
+  x.toUpperCase(y);
+The cycles do while are used to ask for users datas and then verify its.
 When i want to do news functions but if the data what the client is looking for but that isn't found we can use:
-  return xy || z<Messege that i show to the usuary what who says that what he is looking for is not there>;
-
+  return xy || z<Message that i show to the usuary what who says that what he is looking for is not there>;
+To do a conditional in a single line we can use:
+ For example: 
+  function c(){
+    return x > y ? x : y;
+  }
+The difference between to declare a variable with var and to declare a variable with let is:
+  With var we can declare the same variable twice and i don't get an error.
+  Whit let i only can declare the same variable just one time.
+Another difference between var and let is what if i use let in a function, conditional or cycle this only works inside of the function, conditional or cycle but that  one won't show outside of then and that'll show an error.
+We can declare a variable with const but i don't change the value once given. But there is only one way to upload a const in JavaScript so:
+  const x = [0, 1, 2, 3 ,4];
+  x[0] = 5;
+  x[1] = 6;
+  x[2] = 7;
+  x[3] = 8;
+  x[4] = 9;
+When i'm do some objects in JavaScript and i don't want to add new things in these elements i would do this:
+ 1. First i would make the object:
+    var x = {                           let x = [
+      w = a;                             w = a,
+      y = b;                             y = b,
+       z = c;                            z = c,
+       }                                 ];
+ 2. Then i use:
+    Object.freeze(x);
+In JavaScript there is something called arrow functions, these functions are antonymous and are written so:
+ const fechas = function (){
+    return new Date();
+ }
+ And with the arrow functions we can write them so:
+  const fechas = () => new Date();
+ And to add parameters in this function i must write then in parentheses.
+To add a Array with another Array we use:
+  x<Array what i gonna add another Array.>.concat(y<The Array That i gonna add.>);
+In JavaScript there is a operator called rest, this operator is be able to do parameters in a function and convert them in a Array so:
+  function x (...a){
+    console.log(a);
+  }
+In the operator rest there is a method called .reduce(), is be able to add the parameters and add with the elements in an Array so:
+  const sumar = (...args) => {
+    return args.reduce((a + b) => a + b, 0);
+  }
+In JavaScript there is an operator called spread and this operator decompose<descomponer> in separate elements of a Array and to add them in the parameters of a function so:
+  const numeros = [1, 2,3];
+  function sumar (x, y, z){
+    return x + y +z;
+  }
+  console.log(sumar(...numeros<add the variable that contents the Array.>));<That is the operator spread>
+In JavaScript there is something called destructuring syntax, this servers to add to a variable properties of a object so:
+  const usuario = {
+  a = x,
+  b = y 
+  };
+  const {nombre, edad} = usuario;
+And to do that in nested objects<objetos anidados.> we ca do it so:
+   const usuario = {
+  a = {
+   c = x,
+   b = y
+  }
+  };
+  const {a : {nombre, edad}} = usuario;
+In JavaScript there is something called literal or string templates<plantillas literales o de cadena> and that is something what help us to do so that the code is better and these are some features<caracteristicas> of this:
+  1. Backtick is used so: ``
+  2. Can contain simple stings and double strings.
+  3. The lines are keep how code is written.
+  4. To replace a variable write ${x}.
+  5. Within ${} yet you can write expressions.
+  For example:
+   var a = 6; 
+    console.log(`El valor de a es : ${a}`);
+Before to do a function that return me an object we used:
+  const x = (x, y, z) => {
+    return {
+      w = a,
+      x = b,
+      y = c
+    };
+  };
+But we could do it so:
+  const x = (x, y, z) => ({x, y, z});
+In JavaScript we can do classes in our code and functions within theirs but there are two functions that allow us to protect the data of our object, and those are getters and setters.
+ 1. Getters is a function that allow us to get values of a private property.
+ 2. Setters is a function that allow us to upload values of a private property.
+ These are used so:
+   class x {
+    constructor(){
+      this._<private property>y;
+    }
+    <getters>
+    get y (){
+      return this._y;
+    }
+    <setters>
+    set y (z) {
+      this._y = z;
+    }
+   }
